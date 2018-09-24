@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PrincipalController">
+   <children>
+      <VBox prefHeight="201.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Selecione o Produto:">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbProdutos" prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Quantidade:" />
+                        <VBox alignment="TOP_RIGHT">
+                           <HBox.margin>
+                              <Insets left="10.0" right="30.0" />
+                           </HBox.margin>
+                           <children>
+                              <TextField fx:id="txtFldQtd" prefWidth="40.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox style="-fx-border-color: #BDBD; -fx-border-radius: 2;">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Nome do Produto:">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Label>
+                        <Label text="Un:">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin></Label>
+                        <Label text="Cor:">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin></Label>
+                        <Label text="Preço: R$">
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin></Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="2.0" left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label fx:id="lblNome">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUn">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCor">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPreco">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="2.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <HBox alignment="BOTTOM_RIGHT" nodeOrientation="RIGHT_TO_LEFT" spacing="3.0">
+                     <children>
+                        <Label fx:id="lblTotal" />
+                        <Label fx:id="lblPrecoTotal" text="Preço Total: R$">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btnLimparClick" text="Limpar" />
+                  <Button mnemonicParsing="false" onAction="#btnFecharClick" text="Fechar" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+ </AnchorPane>
